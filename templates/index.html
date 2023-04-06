@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Covid Detection</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/custom.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="/">Lobe-wise GGO COVID-19</a>
+        <!--<div class="d-flex">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+          </ul>
+        </div>-->
+      </div>
+    </nav>
+    <!--hero-->
+    <section class="hero">
+      <div class="container">
+        <div class="row px-5">
+          <div class="col-md-6 my-auto text-center">
+            <h2 class="display-6" style="width: 95%">Lobe-wise GGO COVID-19</h2>
+            <p class="lead" style="width: 95%; font-size: 1.2rem">
+              An overview of a novel deep learning approach to redefine
+              lobe-wise ground glass opacity (GGO) in COVID-19 patients
+            </p>
+            <div class="text-center mt-4 p-2" style="width: 95%">
+              <form
+                action="/upload"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="drop-zone">
+                  <span class="drop-zone__prompt"
+                    >Drop file here or click to upload</span
+                  >
+                  <input type="file" name="chest" class="drop-zone__input" />
+                </div>
+                <input
+                  type="submit"
+                  value="Analyse"
+                  class="btn btn-primary m-4"
+                  id="analyse"
+                  disabled="true"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1 my-auto p-2 hero-img-section">
+            <img src="static/images/covid.jpeg" class="img-fluid hero-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end hero-->
+    <!--footer-->
+    <footer>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-auto">
+            <p class="lead">&copy; 2023 Lobe-wise GGO COVID-19</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="searchingimageDiv" style="display: none">Loading...</div>
+    <!--end footer-->
+    <!-- JavaScript Bundle with Popper -->
+    <script type="text/javascript">
+      function showHide() {
+        var oimageDiv = document.getElementById("searchingimageDiv");
+        oimageDiv.style.display =
+          oimageDiv.style.display == "none" ? "inline" : "none";
+        setTimeout(5000);
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/custom.js"></script>
+  </body>
+</html>
