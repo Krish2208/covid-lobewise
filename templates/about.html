@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Covid Detection</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/custom.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="/">Lobe-wise GGO COVID-19</a>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/static/images/2736.png"
+                download="download"
+                >Sample</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+    <section class="hero">
+      <div class="container">
+        <div class="output-panel">
+          <div class="output-head text-center">
+            <div class="row">
+              <div class="col-md-12 text-center">About Us</div>
+            </div>
+            <hr class="output-div" />
+          </div>
+          <div class="row px-4">
+            <div class="col-md-8 px-5 my-auto pb-3">
+              <p class="pb-2">
+                We developed a deep-learning-based method to overcome the
+                limitations of manual chest CT scoring systems and sheds new
+                light on the correlation of biochemical parameters with lung
+                inflammation in COVID-19 patients. The COVID data was
+                collected from Kalinga Institute of Medical Sciences by the
+                enthusiastic team from KIMS and IIT Indore. The study is
+                published in the prestigious IEEE Journal of Biomedical and
+                Health Informatics and comprises more than 1100 COVID-19
+                patients. It found that C-reactive protein (CRP) is the most
+                critical parameter for classifying symptomatic and asymptomatic
+                groups. To overcome the limitations of the manual chest CT
+                scoring system, the researchers used a 2D U-Net-based deep
+                learning (DL) approach to segment the lungs and detect
+                ground-glass-opacity (GGO) in specific lobes from 2D CT images.
+                This method showed over 90% accuracy, compared to the manual
+                process (around 80%), which is subjected to the radiologist's
+                experience. The findings suggest that the effect of
+                inflammation-mediated disease progression may start initially
+                from the right lobe region of the lungs and subsequently affect
+                the rest of the lobes. The group concludes that their approach
+                can be helpful in the early detection of lung involvement in
+                COVID-19 prior to performing unnecessary CT scans. Further study
+                on geographically diverse large population may help to
+                understand the association of the biochemical parameters and
+                pattern of GGO in lung lobes with different SARS-CoV-2 Variants
+                of Concern's disease pathogenesis in these populations.
+              </p>
+              <a
+                class="btn btn-primary link-btn mx-3"
+                href="https://github.com/mtanveer1/Redefining-Lobe-Wise-GGO-COVID-19"
+                >Link to GitHub</a
+              >
+              <a
+                class="btn btn-primary link-btn mx-3"
+                href="https://github.com/Krish2208/covid-lobewise"
+                >Link to Source Code</a
+              >
+              <a
+                class="btn btn-primary link-btn mx-3"
+                href="https://ieeexplore.ieee.org/document/10091876"
+                >Link to Paper</a
+              >
+            </div>
+            <div class="col-md-4 my-auto">
+              <img src="static/images/team.jpg" class="img-fluid" />
+              <img src="static/images/model_arch.png" class="img-fluid py-4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end hero-->
+    <!--footer-->
+    <footer>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-auto">
+            <p class="lead">&copy; 2023 Lobe-wise GGO COVID-19</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="searchingimageDiv" style="display: none">Loading...</div>
+    <!--end footer-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/custom.js"></script>
+  </body>
+</html>

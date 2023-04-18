@@ -13,9 +13,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-# @app.route('/about', methods=['GET'])
-# def about():
-#    return render_template('about.html')
+@app.route('/about', methods=['GET'])
+def about():
+   return render_template('about.html')
 
 
 def convertImgtoBase64(img):
